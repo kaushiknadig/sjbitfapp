@@ -31,6 +31,11 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -87,6 +92,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        Button mEmailRegisterButton = (Button) findViewById(R.id.email_register_button);
+        mEmailRegisterButton.setOnClickListener (new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                attemptRegister(view);
             }
         });
 
@@ -188,6 +201,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
         }
+    }
+
+    public void attemptRegister(View view) {
+        Intent intent = new Intent(this, RegisterActivity.class);
+        startActivity(intent);
     }
 
     private boolean isEmailValid(String email) {
