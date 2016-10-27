@@ -9,10 +9,11 @@
     android:background="#303030">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/splash_image"
+        android:layout_height="@android:dimen/thumbnail_width"
+        app:srcCompat="@drawable/feedback_trail"
         android:id="@+id/imageView3"
         android:layout_weight="0.28"
-        android:layout_marginTop="250dp" />
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="@android:dimen/thumbnail_height" />
 </LinearLayout>

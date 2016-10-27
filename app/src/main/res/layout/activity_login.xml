@@ -24,7 +24,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/splash_image"
+        app:srcCompat="@drawable/feedback_trail"
         android:id="@+id/imageView2"
         android:scaleX="5"
         android:scaleY="5"
