@@ -11,76 +11,94 @@
     android:background="@color/dark_grey"
     android:weightSum="1">
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_weight="0.05" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:hint="USN"
         android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/editText8"
-        android:layout_weight="0.05"
-        android:text="Email" />
+        android:maxLines="1"
+        android:singleLine="true" />
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_weight="0.05"
-        android:text="Password" />
+        android:hint="Name"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="USN"
-        android:ems="10"
-        android:id="@+id/editText9"
-        android:layout_weight="0.05" />
+        android:hint="@string/prompt_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
 
-    <EditText
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="356dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:imeActionId="@+id/login"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Branch"
-        android:ems="10"
-        android:id="@+id/editText10"
-        android:layout_weight="0.05" />
+        android:hint="Sem"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editText12"
-        android:layout_weight="0.05"
-        android:text="Sem" />
+        android:hint="Branch"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/editText13"
-        android:layout_weight="0.05" />
+        android:hint="Section"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
 
-    <EditText
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
-        android:ems="10"
-        android:id="@+id/editText14"
-        android:layout_weight="0.05"
-        android:text="Mobile" />
+        android:hint="Mobile"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:singleLine="true" />
 
+    <Button
+        android:id="@+id/button2"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_register"
+        android:textStyle="bold"
+        android:background="#0090A0" />
 </LinearLayout>
